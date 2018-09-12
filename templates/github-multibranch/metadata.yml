@@ -4,13 +4,11 @@ description: A simple CloudBees Pipeline Template with support for a GitHub Mult
 parameters:
   - name: repoOwner
     displayName: Repository Owner
-    defaultValue: kshultzCB
   - name: repository
     displayName: Repository
   - name: githubCredentialId
     displayName: GitHub Credential ID
     type: CREDENTIALS
-    defaultValue: kshultzCB-on-GitHub
 multibranch:
   branchSource:
     github:
