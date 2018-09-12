@@ -6,13 +6,10 @@ parameters:
     displayName: Repository Owner
   - name: repository
     displayName: Repository
-  - name: githubCredentialId
-    displayName: GitHub Credential ID
-    type: CREDENTIALS
 multibranch:
   branchSource:
     github:
       id: ${repository}
-      credentialsId: ${githubCredentialId}
+      credentialsId: kshultzCB-on-GitHub
       repoOwner: ${repoOwner}
       repository: ${repository}
