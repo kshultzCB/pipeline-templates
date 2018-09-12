@@ -4,8 +4,10 @@ description: A simple CloudBees Pipeline Template with support for a GitHub Mult
 parameters:
   - name: repoOwner
     displayName: Repository Owner
+    defaultValue: comes_from_metadata.yml
   - name: repository
     displayName: Repository
+    defaultValue: https://github.com/cloudbees/comes_from_metadata.yml.git
 multibranch:
   branchSource:
     github:
